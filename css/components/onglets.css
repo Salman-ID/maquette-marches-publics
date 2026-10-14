@@ -1,0 +1,9 @@
+/* Onglets */
+/* ---------- tabs ---------- */
+.tabs{display:flex;gap:4px;border-bottom:1px solid var(--color-border);overflow-x:auto;position:relative}
+.tab{padding:12px 14px;font-weight:600;font-size:13.5px;color:var(--color-text-muted);white-space:nowrap;display:flex;align-items:center;gap:8px;position:relative;transition:color .2s}
+.tab:hover{color:var(--color-text)}
+.tab.on{color:var(--color-primary)}
+.tab .cnt{background:#EDF1F6;color:var(--color-text-muted);font-size:11px;padding:1px 7px;border-radius:999px}
+.tab.on .cnt{background:var(--color-primary);color:#fff}
+.tab-ink{position:absolute;bottom:-1px;height:3px;background:var(--color-gold);border-radius:3px 3px 0 0;transition:all .35s var(--ease)}

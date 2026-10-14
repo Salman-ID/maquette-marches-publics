@@ -1,0 +1,6 @@
+/* Boutons de langue FR / ع / EN */
+/* ===== boutons de langue sur fond clair ===== */
+.lang-light{display:flex;gap:4px;align-items:center}
+.lang-light .lang{border-color:var(--color-border);color:var(--color-text-muted)}
+.lang-light .lang.on{background:var(--color-gold);border-color:var(--color-gold);color:var(--color-gold-ink)}
+.top-lang{margin-right:4px}

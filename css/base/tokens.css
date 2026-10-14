@@ -1,0 +1,16 @@
+/* Design tokens : couleurs, typographies, rayons, ombres */
+:root{
+  --color-navy:#0B2545;--color-navy-2:#132F55;--color-navy-3:#1B3A66;
+  --color-primary:#0A5BB5;--color-primary-hover:#1E88E5;--color-primary-soft:#E6F0FB;
+  --color-gold:#C9A227;--color-gold-dark:#9A7A12;--color-gold-light:#F5E6B8;--color-gold-ink:#2B1F00;
+  --color-danger:#C62828;--color-danger-soft:#FBE9E9;
+  --color-success:#2E7D32;--color-success-soft:#E7F3E8;
+  --color-warning:#E8A317;--color-warning-soft:#FDF3DF;--color-warning-ink:#7A5200;
+  --color-bg:#F4F7FB;--color-surface:#FFFFFF;--color-text:#1A2B42;--color-text-muted:#5A6B82;--color-border:#D5DEEA;
+  --font-display:'Playfair Display',Georgia,serif;--font-body:'Inter',system-ui,sans-serif;--font-mono:'JetBrains Mono',ui-monospace,monospace;--font-ar:'IBM Plex Sans Arabic','Inter',sans-serif;
+  --radius:8px;--radius-card:12px;
+  --shadow-sm:0 1px 2px rgba(11,37,69,.06),0 1px 3px rgba(11,37,69,.05);
+  --shadow:0 4px 14px rgba(11,37,69,.08),0 1px 3px rgba(11,37,69,.05);
+  --shadow-lg:0 18px 50px rgba(11,37,69,.18);
+  --ease:cubic-bezier(.2,.8,.2,1);
+}

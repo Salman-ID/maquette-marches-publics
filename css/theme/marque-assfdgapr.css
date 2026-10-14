@@ -1,0 +1,41 @@
+/* Bloc-marque FSSFDGAPR : logo + nom complet */
+/* ===== Identité FSSFDGAPR : logo + nom complet (bloc-marque institutionnel) ===== */
+.p-header .in{flex-wrap:wrap;height:auto;padding-top:14px;column-gap:24px;row-gap:0}
+.p-header .brand{order:1;padding-bottom:14px;flex:1 1 auto;min-width:0}
+.p-header .acts{order:2;padding-bottom:14px}
+.p-header .p-nav{order:3;flex:1 0 100%;height:50px;border-top:1px solid rgba(255,255,255,.08);margin:0 -12px;padding:0 0}
+.p-header .emb{transition:width .3s var(--ease),height .3s var(--ease)}
+.p-header.scrolled .emb{width:52px;height:52px}
+.p-header.scrolled .in{padding-top:8px}.p-header.scrolled .brand,.p-header.scrolled .acts{padding-bottom:8px}
+.emb{box-shadow:0 0 0 2px rgba(201,162,39,.75),0 6px 18px rgba(0,0,0,.35)!important;image-rendering:auto}
+.brand{gap:16px}
+.wm{gap:6px;line-height:1.25;min-width:0}
+.wm-n{font-family:var(--font-body);font-weight:700;color:#fff;font-size:16px;line-height:1.3;letter-spacing:-.005em;max-width:560px;text-wrap:balance}
+.wm-s{display:flex;align-items:center;gap:8px;margin-top:0;font-size:11px;letter-spacing:.12em;white-space:nowrap}
+.wm-s b{color:var(--color-gold);font-weight:700;letter-spacing:.08em}
+.wm-s i{width:4px;height:4px;border-radius:50%;background:rgba(201,162,39,.7);flex:none}
+.wm-s span{color:#9FB2CC}
+.p-footer .brand .wm-n{font-size:15px;max-width:380px}
+.l-art .brand .wm-n{font-size:17px;max-width:420px}
+/* sidebar */
+.app{grid-template-columns:284px 1fr}
+.sb-brand{flex-direction:column;align-items:center;text-align:center;gap:10px;padding:20px 18px 16px}
+.sb-org{font-size:12.5px;font-weight:600;color:#fff;line-height:1.38;text-wrap:balance}
+.sb-sp{display:flex;align-items:center;gap:7px;font-size:10.5px;letter-spacing:.08em;text-transform:uppercase}
+.sb-sp b{color:var(--color-gold);font-weight:700}
+.sb-sp i{width:4px;height:4px;border-radius:50%;background:rgba(201,162,39,.7)}
+.sb-sp span{color:#9FB2CC;margin:0!important;display:inline!important}
+@media (max-width:860px){.app{grid-template-columns:1fr}.sidebar{width:290px}}
+@media (max-width:1280px){.p-header .p-nav{display:none}}
+@media (max-width:860px){
+ .p-header .in{padding-top:10px;column-gap:10px}
+ .p-header .brand{gap:10px;padding-bottom:10px}.p-header .acts{padding-bottom:10px}
+ .p-header .emb{width:54px;height:54px}
+ .wm-n{font-size:12px;line-height:1.3;max-width:none}
+ .wm-s{display:flex;font-size:9.5px}.wm-s i,.wm-s span{display:none}
+ .p-footer .brand .wm-n{font-size:13px}
+}
+[dir=rtl] .wm-n,[dir=rtl] .sb-org{font-family:'Noto Kufi Arabic','IBM Plex Sans Arabic',sans-serif;line-height:1.6}
+[dir=rtl] .wm-s,[dir=rtl] .sb-sp{letter-spacing:0}
+.sb-brand .sb-sp b{display:inline;font-family:var(--font-body);font-size:10.5px;color:var(--color-gold);line-height:1}
+.p-header .brand{flex:1 1 0}.p-header .acts{flex:none}

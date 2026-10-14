@@ -1,0 +1,16 @@
+/* Badges */
+/* ---------- badges ---------- */
+.badge{display:inline-flex;align-items:center;gap:6px;height:24px;padding:0 10px;border-radius:999px;font-size:12px;font-weight:600;white-space:nowrap}
+.badge::before{content:"";width:6px;height:6px;border-radius:50%;background:currentColor}
+.badge.plain::before{display:none}
+.b-success{background:var(--color-success-soft);color:var(--color-success)}
+.b-warning{background:var(--color-warning-soft);color:var(--color-warning-ink)}
+.b-danger{background:var(--color-danger-soft);color:var(--color-danger)}
+.b-primary{background:var(--color-primary-soft);color:var(--color-primary)}
+.b-neutral{background:#EDF1F6;color:var(--color-text-muted)}
+.b-gold{background:var(--color-gold-light);color:var(--color-gold-ink)}
+.b-live::before{animation:pulse 1.6s infinite}
+.chip{display:inline-flex;align-items:center;gap:6px;height:30px;padding:0 12px;border-radius:999px;border:1px solid var(--color-border);background:#fff;font-size:12.5px;font-weight:500;color:var(--color-text);transition:all .2s}
+.chip:hover{border-color:var(--color-primary);color:var(--color-primary)}
+.chip.on{background:var(--color-primary);border-color:var(--color-primary);color:#fff}
+.tag{display:inline-flex;align-items:center;gap:5px;font-size:12px;color:var(--color-text-muted)}

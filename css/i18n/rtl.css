@@ -1,0 +1,71 @@
+/* Arabe : mise en page RTL */
+/* ===== RTL arabe ===== */
+[dir=rtl] body{font-family:'IBM Plex Sans Arabic',var(--font-body)}
+[dir=rtl] *{letter-spacing:0!important}
+[dir=rtl] .hero h1,[dir=rtl] .sec-head h2,[dir=rtl] .page-hero h1,[dir=rtl] .stat .v,[dir=rtl] .login h2,[dir=rtl] .receipt h2,[dir=rtl] .acc-card h3,[dir=rtl] .drawer-head h3,[dir=rtl] .wm-t,[dir=rtl] .access-card h3{font-family:'Noto Kufi Arabic','IBM Plex Sans Arabic',serif}
+[dir=rtl] .hero h1{line-height:1.45;font-size:40px}[dir=rtl] .page-hero h1{line-height:1.5}
+[dir=rtl] .hero h1 em{font-style:normal}
+[dir=rtl] .mq-tr{font-style:normal}
+[dir=rtl] .wm-t b{margin-right:6px}
+[dir=rtl] .mono,[dir=rtl] .hash,[dir=rtl] .cd span{direction:ltr;unicode-bidi:isolate}
+[dir=rtl] .i-chev,[dir=rtl] .i-chevl,[dir=rtl] .i-send,[dir=rtl] .i-trend,[dir=rtl] .i-logout{transform:scaleX(-1)}
+[dir=rtl] .mg-col a:hover .ico{transform:scaleX(-1) translateX(3px)}
+[dir=rtl] .acc-card:hover .acc-go .ico{transform:scaleX(-1) translateX(5px)}
+[dir=rtl] .tree details[open]>summary .chev{transform:rotate(90deg)}
+[dir=rtl] .tbl th{text-align:right}[dir=rtl] .tbl .r{text-align:left}
+[dir=rtl] .sb-link.on::before{left:auto;right:-10px;border-radius:3px 0 0 3px}
+[dir=rtl] .sup-nav a.on::before{left:auto;right:0}
+[dir=rtl] .ao-card::after{left:auto;right:0}
+[dir=rtl] .input-icon .ico{left:auto;right:12px}
+[dir=rtl] .input-icon .input{padding-left:12px;padding-right:38px}
+[dir=rtl] .drawer{left:auto;right:0;transform:translateX(102%)}[dir=rtl] .drawer.open{transform:none}
+[dir=rtl] .plan-btn,[dir=rtl] .mob-btn{right:auto;left:18px}
+[dir=rtl] .toasts{right:auto;left:20px}
+[dir=rtl] .toast{border-left:none;border-right:4px solid var(--color-gold)}
+[dir=rtl] .toast.success{border-right-color:#5CB860}[dir=rtl] .toast.danger{border-right-color:#EF5350}
+[dir=rtl] .mega{left:auto;right:-180px}[dir=rtl] .ddm{left:auto;right:0}[dir=rtl] .ddm.right{right:auto;left:0}
+[dir=rtl] .hero-ros{right:auto;left:-140px}[dir=rtl] .ph-ros{right:auto;left:-60px}[dir=rtl] .l-ros{right:auto;left:-180px}
+[dir=rtl] .acc-deco{right:auto;left:-80px}[dir=rtl] .acc-card::before{transform-origin:right}
+[dir=rtl] .key-card.secours::after{right:auto;left:-30px;transform:rotate(-45deg)}
+[dir=rtl] .tl{padding-left:0;padding-right:26px}[dir=rtl] .tl::before{left:auto;right:8px}[dir=rtl] .tl-it::before{left:auto;right:-23px}
+[dir=rtl] .pipe-st:not(:last-child)::after{right:auto;left:-6px;transform:translateY(-50%) rotate(-135deg)}
+[dir=rtl] .stp:not(:last-child)::after{margin-left:0;margin-right:6px}
+[dir=rtl] .stp{padding-right:0;padding-left:16px}
+[dir=rtl] .sf::before{left:50%;right:-50%}
+[dir=rtl] .stat{border-right:none;border-left:1px solid var(--color-border)}[dir=rtl] .stat:last-child{border-left:none}
+[dir=rtl] .mq-tr{animation-name:marqR}
+@keyframes marqR{to{transform:translateX(50%)}}
+[dir=rtl] .sec-row:hover{padding-left:6px;padding-right:12px}
+[dir=rtl] .sec-th span:nth-child(2n),[dir=rtl] .sec-row b{text-align:left}
+[dir=rtl] .action-list button{text-align:right}
+[dir=rtl] .action-list button:hover:not([disabled]){padding-left:18px;padding-right:22px}
+[dir=rtl] .role-b{text-align:right}
+[dir=rtl] .msg-list{border-right:none;border-left:1px solid var(--color-border)}
+[dir=rtl] .msg-item.on{box-shadow:inset -3px 0 0 var(--color-primary)}
+[dir=rtl] .res-item .side{text-align:left;align-items:flex-start}
+[dir=rtl] .tree details{margin-left:0;margin-right:16px}[dir=rtl] .tree>details{margin-right:0}
+[dir=rtl] .tree .leaf{padding:5px 34px 5px 8px}
+[dir=rtl] .top-lang{margin-right:0;margin-left:4px}
+[dir=rtl] .p-nav a.on::after,[dir=rtl] .p-nav .dd>button.on::after{left:12px;right:12px}
+[dir=rtl] .switch input:checked + .tr::after{transform:translateX(16px)}
+[dir=rtl] .switch .tr{direction:ltr}
+[dir=rtl] .ring-wrap .ring-c,[dir=rtl] .ring-sm .ring-c{direction:ltr}
+[dir=rtl] .bars,[dir=rtl] .kpi .spark,[dir=rtl] svg{direction:ltr}
+[dir=rtl] .kpi .spark{right:auto;left:14px}
+[dir=rtl] .sb-brand span{letter-spacing:0}
+@media (max-width:860px){
+ [dir=rtl] .sidebar{left:auto;right:0;transform:translateX(100%)}[dir=rtl] .sidebar.open{transform:none}
+ [dir=rtl] .hero h1{font-size:28px}
+ .mob-btn{bottom:74px;right:16px}.mob-btn .pl-t{display:none}
+ .topbar .icon-btn[title]:not(.sb-tg){display:none}
+}
+@media (max-width:1280px){[dir=rtl] .m-menu{right:auto;left:0;transform:translateX(-105%)}[dir=rtl] .m-menu.open{transform:none}}
+.emb .emb-seal{transform-box:view-box;transform-origin:32.5px 33.5px;transition:transform .5s var(--ease)}
+.brand:hover .emb .emb-seal,.sb-brand:hover .emb .emb-seal{transform:scale(1.15) rotate(-12deg)}
+.prod{overflow:hidden;display:flex;flex-direction:column}
+.prod-img{height:120px;background:linear-gradient(140deg,#EAF2FC,#F8FAFD);display:grid;place-items:center;color:var(--color-primary);border-bottom:1px solid var(--color-border);transition:background .3s}
+.prod:hover .prod-img{background:linear-gradient(140deg,#DCEAFB,#F1F6FD)}
+.cert-card{padding:18px}
+@media print{.sidebar,.topbar,.plan-btn,.mob-btn,.concept,.toasts,.p-header,.util-bar,.p-footer{display:none!important}.app{display:block}.content{padding:0}}
+@media (max-width:1100px){.g4{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:860px){.g4{grid-template-columns:1fr}}

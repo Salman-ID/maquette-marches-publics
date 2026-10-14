@@ -1,0 +1,13 @@
+/**
+ * Portail : page d’accueil de l’aide
+ * (extrait de la maquette FSSFDGAPR — script classique, portée globale)
+ */
+/* ================= AIDE ================= */
+function viewAideLanding(){
+  return portalLayout('/aide',`<section class="page-hero"><div class="pattern" style="position:absolute;inset:0;opacity:.08">${patternSVG}</div><div class="in" style="text-align:center;padding:56px 24px 64px">
+  <div class="crumbs" style="justify-content:center"><a href="#/">Accueil</a>${ic('chev','sm')}<span>Aide</span></div><h1>Comment pouvons-nous vous aider ?</h1>
+  <div class="searchbox" style="max-width:640px;margin:22px auto 0"><div class="row"><div class="input-icon">${ic('search')}<input class="input" placeholder="Ex. : retirer un pli, certificat, inscription…"></div><button class="btn btn-primary btn-lg">Rechercher</button></div></div></div></section>
+  <section class="section"><div class="grid g3">${[['file','Guides d’utilisation','/aide?t=guides'],['message','Contact / Assistance','/aide?t=contact'],['building','Visualiser les entités de la FSSFDGAPR','/aide?t=acheteurs'],['cpu','Outils informatiques','/aide?t=outils'],['send','Consultation de test','/preparer?t=test'],['ban','Sociétés exclues','/societes-exclues']].map(([i,t,h],k)=>`<a class="card card-pad lift" href="#${h}" data-a style="--d:${k};color:inherit;display:flex;gap:14px;align-items:center"><div class="acc-ic" style="width:48px;height:48px;margin:0">${ic(i,'lg')}</div><div><b>${t}</b><div class="muted" style="font-size:12.5px">Articles et pas-à-pas</div></div><span style="margin-left:auto;color:var(--color-primary)">${ic('chev')}</span></a>`).join('')}</div>
+  <div class="cols c-1-1" style="margin-top:24px"><div class="card" data-a><div class="card-head"><h3>Questions populaires</h3></div>${['Comment obtenir mes codes d’accès ?','Mon certificat n’est pas détecté','Puis-je déposer une offre variante ?','Que faire si la date limite est dépassée ?'].map(t=>`<a class="list-row" href="#/support?t=faq" style="color:inherit"><div class="lr-ico ic-n">${ic('help')}</div><div class="lr-m"><b>${t}</b></div>${ic('chev','sm')}</a>`).join('')}</div>
+  <div class="card card-pad" data-a style="--d:1;display:flex;flex-direction:column;gap:10px;justify-content:center;text-align:center"><div style="margin:0 auto">${rosette(90,'#0A5BB5')}</div><b style="font-size:17px">Besoin d’un accompagnement ?</b><p class="muted" style="font-size:13px">Le support répond aux entreprises, acheteurs, organismes agréés et comptables.</p><div style="display:flex;gap:10px;justify-content:center"><a class="btn btn-primary" href="#/support?t=contacts">Contacter le support</a><a class="btn btn-outline" href="#/support?t=guides">Guides</a></div></div></div></section>`);
+}

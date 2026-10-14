@@ -1,0 +1,14 @@
+{
+  "name": "assfdgapr-marches-publics",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Maquette UI/UX du portail des marchés de la FSSFDGAPR (FR / AR / EN) — données fictives",
+  "type": "module",
+  "scripts": {
+    "dev": "node scripts/serve.mjs . 5173",
+    "check": "node scripts/check.mjs",
+    "build": "node scripts/check.mjs && node scripts/build.mjs",
+    "preview": "node scripts/serve.mjs dist 4173"
+  },
+  "engines": { "node": ">=18" }
+}

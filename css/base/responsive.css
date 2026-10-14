@@ -1,0 +1,44 @@
+/* Responsive (tablette / mobile) */
+@media (max-width:1100px){
+  .hero .in{grid-template-columns:1fr}.live-panel{display:none}
+  .ao-grid{grid-template-columns:1fr 1fr}
+  .kpis{grid-template-columns:1fr 1fr}
+  .c-2-1,.c-3-2,.c-1-2,.detail-grid,.layout-search{grid-template-columns:1fr}
+  .filters,.preview{position:static}
+  .p-nav{display:none}
+}
+@media (max-width:860px){
+  .app{grid-template-columns:1fr}
+  .sidebar{position:fixed;left:0;top:0;bottom:0;width:270px;transform:translateX(-100%);transition:transform .35s var(--ease)}
+  .sidebar.open{transform:none}
+  .burger{display:grid}
+  .topbar{padding:0 16px}.content{padding:20px 16px 90px}
+  .stats-strip .card{grid-template-columns:1fr 1fr}.stat:nth-child(2){border-right:none}.stat:nth-child(-n+2){border-bottom:1px solid var(--color-border)}
+  .g2,.g3,.g4,.env-grid,.access-grid,.steps-line,.c-1-1{grid-template-columns:1fr}
+  .span2,.span3{grid-column:auto}
+  .steps-line::before{display:none}
+  .ao-grid{grid-template-columns:1fr}
+  .hero h1{font-size:34px}
+  .p-header .acts .btn-goldline,.p-header .acts .btn-primary{display:none}
+  .p-footer .in{grid-template-columns:1fr 1fr}
+  .login{grid-template-columns:1fr}.login .l-art{display:none}
+  .msg-layout{grid-template-columns:1fr}.msg-list{max-height:280px}
+  .pipe{grid-template-columns:1fr 1fr}.pipe-st::after{display:none}
+  .info-list{grid-template-columns:1fr}
+  .role-sw .lbl-r{display:none}
+  .searchbox .row{flex-wrap:wrap}.searchbox .select{width:100%}
+  .res-item{grid-template-columns:1fr}.res-item .side{align-items:flex-start;text-align:left}
+  .kpis{grid-template-columns:1fr}
+  .topbar .crumb{display:none}
+  .util-bar{display:none}.concept{font-size:9.5px;padding:2px 10px;white-space:nowrap}
+  .brand .t2{display:none}.brand .t1{font-size:16px}
+  .plan-btn{padding:10px 13px}.plan-btn .pl-t{display:none}
+  .stats-strip .stat .v{font-size:26px}
+  .page-title h1{font-size:21px}
+  .announce{flex-wrap:wrap}.banner{flex-wrap:wrap}.banner .sp{margin-left:0}.announce .btn{margin-left:0!important}
+  .bars{gap:6px;padding:10px 12px 0}
+  .hbar{grid-template-columns:110px 1fr 40px}
+  .stepper .stp .st{display:none}
+  .card:has(> table.tbl),.card:has(> div > table.tbl){overflow-x:auto}
+  .card-head .sp{margin-left:0}.stp{padding-right:6px}
+}

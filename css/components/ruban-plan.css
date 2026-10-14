@@ -1,0 +1,19 @@
+/* Ruban « maquette conceptuelle » et bouton Plan */
+/* ---------- concept ribbon & plan button ---------- */
+.concept{position:fixed;top:0;left:50%;transform:translateX(-50%);z-index:90;background:var(--color-gold);color:var(--color-gold-ink);font-size:11px;font-weight:600;padding:3px 14px;border-radius:0 0 8px 8px;letter-spacing:.04em;text-transform:uppercase;box-shadow:var(--shadow-sm);pointer-events:none}
+.plan-btn{position:fixed;right:18px;bottom:18px;z-index:95;display:flex;align-items:center;gap:8px;background:var(--color-navy);color:#fff;padding:11px 16px;border-radius:999px;box-shadow:var(--shadow-lg);font-weight:600;font-size:13px;border:1px solid rgba(201,162,39,.5);transition:transform .25s var(--ease)}
+.plan-btn:hover{transform:translateY(-2px)}
+.plan-btn .dot{width:8px;height:8px;border-radius:50%;background:var(--color-gold);box-shadow:0 0 0 0 rgba(201,162,39,.7);animation:pulse 2s infinite}
+.drawer-bg{position:fixed;inset:0;background:rgba(11,37,69,.45);backdrop-filter:blur(3px);z-index:120;opacity:0;pointer-events:none;transition:opacity .3s}
+.drawer-bg.open{opacity:1;pointer-events:auto}
+.drawer{position:fixed;top:0;left:0;bottom:0;width:min(400px,92vw);background:var(--color-surface);z-index:121;transform:translateX(-102%);transition:transform .4s var(--ease);display:flex;flex-direction:column;box-shadow:var(--shadow-lg)}
+.drawer.open{transform:none}
+.drawer-head{background:var(--color-navy);color:#fff;padding:22px 22px 18px;border-bottom:3px solid var(--color-gold)}
+.drawer-head h3{font-family:var(--font-display);font-size:22px;font-weight:600}
+.drawer-body{overflow:auto;padding:12px 14px 30px}
+.drawer-group{margin-top:14px}
+.drawer-group h4{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--color-text-muted);padding:6px 8px}
+.drawer-link{display:flex;align-items:center;gap:10px;padding:9px 10px;border-radius:8px;color:var(--color-text);font-weight:500}
+.drawer-link:hover{background:var(--color-bg)}
+.drawer-link.active{background:var(--color-primary-soft);color:var(--color-primary)}
+.drawer-link .n{margin-left:auto;font-size:11px;color:var(--color-text-muted)}

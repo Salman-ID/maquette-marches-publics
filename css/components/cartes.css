@@ -1,0 +1,12 @@
+/* Cartes */
+/* ---------- cards ---------- */
+.card{background:var(--color-surface);border:1px solid var(--color-border);border-radius:var(--radius-card);box-shadow:var(--shadow-sm)}
+.card-pad{padding:20px}
+.card-head{display:flex;align-items:center;gap:12px;padding:16px 20px;border-bottom:1px solid var(--color-border)}
+.card-head h3{font-size:15px;font-weight:600}
+.card-head .sp{margin-left:auto;display:flex;gap:8px;align-items:center}
+.lift{transition:transform .3s var(--ease),box-shadow .3s var(--ease),border-color .3s}
+.lift:hover{transform:translateY(-3px);box-shadow:var(--shadow);border-color:#BFCFE3}
+
+.cols>*,.grid>*,.detail-grid>*,.layout-search>*,[style*="display:grid"]>*{min-width:0}
+.card-head{flex-wrap:wrap}
